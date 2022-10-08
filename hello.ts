@@ -1,1 +1,6 @@
-await Deno.writeTextFile("hello.txt", "Hello World");
+
+const write = ()=> {
+  await Deno.writeTextFile("hello.txt", "Hello World");
+}
+
+export write
