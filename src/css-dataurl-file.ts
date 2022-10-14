@@ -18,7 +18,7 @@ export async function Dataurl2File() {
     recursive: true,
   });
 
-  const object = toJSON(text).children;
+  const object = toJSON(text);
   for (const key in object) {
     if (Object.prototype.hasOwnProperty.call(object, key)) {
       const element = object[key];
